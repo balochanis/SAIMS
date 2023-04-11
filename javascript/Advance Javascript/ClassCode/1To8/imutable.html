@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
+
+	// created function for making/return immutable object
+	function makeImmutable(obj) {   // pass any object as a parameter to make immutable
+		return Object.freeze(obj);
+		
+	} 
+	
+	function updateFreezeObjectProperty(obj, updateObj) {
+		var o = Object.assign({}, obj, updateObj);
+		return Object.freeze(o);
+	}
+
+	var _obj = {'name': 'Mohsin'};
+	var immutableObj = makeImmutable(_obj);
+	// immutableObj['name'] = 'Yousuf'; // error because immutableObj now immutable
+	console.log('is immutableObj ', Object.isFrozen(immutableObj));
+	console.log('immutableObj ', immutableObj);
+	// update property or add property
+	var updateName = {'name': 'Yousuf', 'class': '@CMAD'};
+	immutableObj = updateFreezeObjectProperty(immutableObj, updateName);
+	console.log('immutableObj after update', immutableObj);
+	console.log('is immutableObj ', Object.isFrozen(immutableObj));
+	
+
+    </script>
+</body>
+
+</html>

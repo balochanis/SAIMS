@@ -1,0 +1,38 @@
+.title
+{
+    /* display: none; */
+}
+
+.top-nav
+{
+    background-color: orange;
+    height: 36px;
+    line-height: 36px;
+}
+
+.top-nav ul
+{
+    list-style: none;
+}
+
+.top-nav ul li
+{
+    display: inline;
+    text-transform: lowercase;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border: 2px solid black;
+}
+
+.top-nav ul li a
+{
+    text-decoration: none;
+
+}
+
+
+.top-nav ul li a:hover
+{
+    text-decoration: underline;
+    color: black;
+}

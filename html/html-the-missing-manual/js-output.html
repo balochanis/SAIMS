@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>JS - Calculation Output</title>
+    <script>
+
+    //     var qty;
+    //     var price;
+    //     var total;
+    //     var qty = document.getElementById("itemQty");
+       
+    //    function calculations()
+    //    {
+    //        var result = total;
+    //    }
+
+    function calculations(4,5)
+    {
+        var qty = 4;
+        var price = 2;
+        var total = qty * price
+        return total;
+        
+    }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Calculation Output</h1>
+
+<form action="">
+<table>
+    <tr>
+        <th scope="row"> <label for="itemQty">Qty:</label></th>
+        <td><input type="number" name="itemQty" id="itemQty" placeholder="Qty" /></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="itemPrice">Price:</label></th>
+        <td><input type="number" name="itemPrice" id="itemPrice" placeholder="Item Price" /></td>
+    </tr>
+    <tr>
+        <th scope="row">Total:</th>
+        <td><output id="itemTotal"></output></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" value="Calculate" onclick="calculations();" />
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

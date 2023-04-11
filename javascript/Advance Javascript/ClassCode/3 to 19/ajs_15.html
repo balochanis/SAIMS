@@ -1,0 +1,47 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="data">
+
+    </div>
+</body>
+<script>
+    ///2.3.2 Higher-order functions
+
+    function applyOperation(a, b, opt) {
+        var re = opt(a, b);
+        return re;
+        //return a * b;
+    }
+
+    var abc = 56;
+    var multiplier = function(a, b) {
+        return a * b;
+    }
+
+    var addition = function(a, b) {
+        return a + b;
+    }
+
+    var subtraction = function(a, b) {
+        return a - b;
+    }
+
+    alert(multiplier)
+    alert(multiplier(2, 3))
+
+    var xyz = applyOperation(3, 4, multiplier)
+    alert(xyz);
+
+    var xyz1 = applyOperation(3, 4, addition);
+    alert(xyz1);
+
+    var xyz2 = applyOperation(3, 4, subtraction);
+    alert(xyz2);
+</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Missing Manual</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header id="the-header">
+          <nav>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">HTML5</a></li>
+                  <li><a href="#">CSS3</a></li>
+                  <li><a href="#">Bootstrap</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+          </nav>
+        </header>
+
+        <div id="main-content">
+
+            <div id="left-content">
+
+                <article>
+                    <h3>Set Post Date</h3>
+                    <p>The party start at <time>2012-03-21</time></p>
+                    <figure>
+                        <img src="assets/images/pic.jpg" alt="Img">
+                       <figcaption>Use date format like YYYY-MM-DD</figcaption>
+
+                    </figure>                        
+                    <footer>
+                        <p>Uploaded by <i>Anis</i></p>
+                    </footer>
+                </article>
+
+                <article>
+                    <h3>Set custom post date</h3>
+                    <p>The party start at <time datetime="2012-03-21">21<sup>st</sup> March</time>.</p>
+                    <figure>
+                        <img src="assets/images/pic.jpg" alt="Img">
+                       <figcaption>Use datetime attribute to insert date (YYYY-MM-DD)</figcaption>
+
+                    </figure>                        
+                    <footer>
+                        <p>Uploaded by <i>Anis</i></p>
+                    </footer>
+                </article>
+
+                <article>
+                    <h3>Set post time</h3>
+                    <p>The party starts everynight at <time datetime="16:30+5:00">04:30 p.m.</time>.</p>
+                    <figure>
+                        <img src="assets/images/pic.jpg" alt="Img">
+                       <figcaption>Use datetime attribute to insert time (hh-mm-05)</figcaption>
+
+                    </figure>                        
+                    <footer>
+                        <p>Parties start every night at &lt;time datetime&equals;<q>16:30-5:00</q>&gt;<b>4:30 p.m.</b>&lt;time&gt;.</p>
+                    </footer>
+                </article>
+
+            </div><!-- end left-content -->
+
+        </div><!-- end main-content -->
+    </div><!-- end wrapper -->
+
+    
+</body>
+</html>

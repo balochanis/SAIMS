@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function save() {
+            var firstName = document.getElementById('firstname').value;
+            var lastName = document.getElementById('lastname').value;
+            var email = document.getElementById('email').value;
+
+            var obj = {
+                firstName: firstName,
+                lastName: lastName,
+                email: email
+            }
+            localStorage.setItem("user", JSON.stringify(obj));
+
+            // var userData = localStorage.getItem("user");
+            // console.log(JSON.parse(userData));
+            // Other way
+            // localStorage.user;
+
+
+            // With Array
+            // localStorage.setItem("data", ["name", "email", 2, true])
+            // var dbData = localStorage.getItem(data)
+            // dbData.split(",")
+        }
+    </script>
+    <div>
+        <label for="">
+
+            <input type="text" name="firstname" id='firstname'>
+        </label>
+        <label for="">
+            <input type="text" name="lastname" id='lastname'>
+        </label>
+        <label for="">
+
+            <input type="text" name="email" id='email'>
+        </label>
+        <button onclick="save()">Save</button>
+    </div>
+</body>
+
+</html>

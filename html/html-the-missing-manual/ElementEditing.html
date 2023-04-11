@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editable Editing</title>
+    <script>
+    
+        // Make the element editable.
+        function startEdit()
+        {
+            var element = document.getElementById("editableElement");
+            element.contentEditable = true;
+        }
+    
+        function stopEdit()
+        {
+            //Return the element to normal.
+            var element = document.getElementById("editableElement");
+            element.contentEditable = false;
+            alert("Your edited content: " + element.innerHTML);
+        }
+    
+        //Show the markup in a message box.
+        
+        
+        </script>
+</head>
+<body>
+    <h1>Editable &lt;div&gt; Below:</h1>
+
+    <div id="editableElement" contenteditable> You can edit this test, if you'd like.</div>
+
+    <button onclick="startEdit();">Start Editing</button>
+    <button onclick="stopEdit();">Stop Editing</button>
+    
+
+
+</body>
+</html>

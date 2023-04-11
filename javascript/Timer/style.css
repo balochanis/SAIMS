@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(23, 155, 155);
+    margin-top: 40px;
+}
+
+
+
+.heading{
+    display: flex;
+    justify-content: center;
+    /* border: 10px solid black; */
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 710px;
+    /* padding: 0px 160px; */
+    /* border-radius: 140px; */
+
+}
+
+.heading h1, #a,#b,#c{
+    text-align: center;
+    font-size: 60px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+
+#hour1, #min1, #sec1{
+    font-size: 30px;
+    margin-top: 60px;
+    background-color: rgb(23, 155, 155);
+    color: black;
+}
+
+.timer h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 70px;
+}
+
+
+.button{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.button button{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:  rgb(23, 155, 155);
+    border: none;
+    
+}
+
+.button button img{
+    background-color:  rgb(23, 155, 155);
+    color: white;
+}
+

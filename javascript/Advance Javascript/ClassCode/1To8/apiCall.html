@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    var callback = (a, b) => {
+        console.log('2 callback ', a, b);
+
+        greetings(a);
+    }
+
+    console.log(1);
+    $.get('https://api.github.com/users/uqutub', callback);
+    console.log(3);
+
+
+
+
+
+    function greetings(u) {
+        alert(u.login);
+    }
+</script>
+
+</html>

@@ -1,0 +1,66 @@
+#wrapper
+{
+    background-color: mediumpurple;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    /* transition: width 2s ease-in-out; */
+    transition: background-color 1s ease;
+    
+}
+
+.box:hover
+{
+    background-color: green;
+    /* width: 300px; */
+    
+}
+
+
+header{
+    background-color: orange;
+    transition: background-color 2s ease;
+    transition: color 42 ease-in;
+    color: red;
+    /* transition-timing-function: ease-in-out; */
+
+    
+}
+
+
+header:hover
+{
+    /* height: 100px; */
+    background-color: crimson;
+    color: black;
+    
+}
+
+nav ul
+{
+    list-style-type: none;
+
+}
+
+nav ul li
+{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    color: red;
+}

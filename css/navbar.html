@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            background-color: lightblue;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav
+        {
+            display: block;
+            /* position: fixed; */
+            /* z-index: ; */
+            background-color: orangered;
+            /* width: 100%; */
+        }
+
+        nav ul {
+            list-style-type: none;
+            /* text-align: center; */
+        }
+
+        nav ul li {
+            border: 1px solid black;
+            display: inline-block;
+            /* margin: 0px 20px; */
+            background-color: lightseagreen;
+            /* padding: 10px 30px; */
+            text-transform: capitalize;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #main-content {
+            margin-top: 20px;
+            position: relative;
+            top: 200px;
+        }
+
+        #left-content {
+            background-color: mediumturquoise;
+            width: 70%;
+            float: left;
+            border: 1px solid black;
+        }
+
+        #left-content p {
+            margin-bottom: 16px;
+            padding: 20px;
+            line-height: 25px;
+        }
+
+        #right-content {
+            background-color: mediumvioletred;
+            width: 29%;
+            float: right;
+            border: 1px solid black;
+        }
+
+        footer
+        {
+            clear: both;
+            height: 32px;
+            text-align: right;
+            padding-right: 20px;
+            background-color: orange;
+            line-height: 32px;
+        }
+
+        #out
+        {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            clear: both;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">list-item-01</a></li>
+                <li><a href="#">list-item-02</a></li>
+                <li><a href="#">list-item-03</a></li>
+                <li><a href="#">list-item-04</a></li>
+                <li><a href="#">list-item-05</a></li>
+            </ul>
+        </nav>
+        <div id="main-content">
+            <div id="left-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maiores, ratione porro sit
+                    veniam eum quam dolorem ut cupiditate in vitae asperiores iste nostrum distinctio dolore est
+                    mollitia. Modi, debitis?</p>
+            </div>
+            <div id="right-content">
+                
+            </div>
+        </div><!-- end main-content -->
+        <footer>
+            <p>&copy;Copyright 2018 TheNewBoston</p>
+        </footer>
+    </div><!-- end wrapper -->
+
+    <div id="out">
+        <div id="in"></div>
+    </div>
+
+</body>
+
+</html>

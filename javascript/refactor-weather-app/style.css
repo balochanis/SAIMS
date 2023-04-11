@@ -1,0 +1,182 @@
+body {
+    background-image: url("images/weather-1.png");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+.main-div {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.weather-comment {
+    margin-top: 100px;
+    color: #484444;
+}
+
+.info {
+    font-size: 8vw;
+    margin: 0;
+    font-family: -webkit-pictograph;
+}
+
+.arrow {
+    font-size: 10vw;
+}
+
+form {
+    margin-top: 15px;
+}
+
+.container {
+    text-align: center;
+}
+
+input,
+button {
+    border-radius: 5px;
+    border: 1px solid #343a40;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+}
+
+button,
+input:focus {
+    outline: none;
+}
+
+#temp-today {
+    color: #413e3e;
+    font-size: 4em;
+    margin: 0px;
+}
+
+#description-today {
+    font-family: cursive;
+    font-size: 40px;
+    margin: 0px;
+    color: #413e3e;
+}
+
+#temp-range-today {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: monospace;
+    color: #2f4f4f;
+}
+
+#today-weather-info {
+    display: none;
+}
+
+#city-name {
+    font-size: 38px;
+    font-family: -webkit-pictograph;
+    letter-spacing: 3px;
+    color: #282828;
+    text-transform: uppercase;
+}
+
+#cloud-today {
+    font-size: 4em;
+    margin-top: 15px;
+    color: #20b1db;
+}
+
+#forecasts-container {
+    display: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.display-sec {
+    display: flex;
+    justify-content: center;
+    ;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.display-sec div {
+    width: 16%;
+    padding: 15px;
+    height: 245px;
+    flex-wrap: wrap;
+    min-width: 140px;
+    text-align: center;
+    margin: 3px;
+    border: 2px solid #ffb288;
+    font-weight: bold;
+}
+
+.display-sec div:hover {
+    background: #ffb28859;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.cloudy {
+    font-size: 40px;
+    color: #20b1db;
+}
+
+.day {
+    margin: 0;
+    font-family: -webkit-pictograph;
+    color: #282828;
+}
+
+.date {
+    margin-top: 0;
+    font-family: monospace;
+    color: #282828;
+}
+
+.temp {
+    font-family: fantasy;
+    color: #413e3e;
+}
+.cloud {
+    font-family: monospace;
+}
+
+@media only screen and (max-width: 1020px) {
+    .display-sec div {
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .display-sec .day5 {
+        width: 100%;
+        border: none;
+        border-top: 2px solid #ffb288;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .display-sec div {
+        width: 100%;
+        border: none;
+        border-top: 2px solid #ffb288;
+        margin: 0;
+        border-radius: 0px;
+    }
+    input {
+        width: 55%;
+    }
+}

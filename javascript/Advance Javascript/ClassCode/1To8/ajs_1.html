@@ -1,0 +1,29 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+</body>
+<script>
+    function Student(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    Student.prototype.getName = function() {
+        return this.name;
+    }
+
+    Student.prototype.setName = function(name) {
+        this.name = name;
+    }
+
+
+    var st = new Student("Usman", 23);
+    st.setName("Arsalan");
+    st.getName();
+</script>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png"/>
+    <link rel="stylesheet" type="text/css" href="icons/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="main-div">
+        <div class="container">
+
+            <form onsubmit="return false">
+                <input type="text" placeholder="Search City">
+                <button type="submit" onclick="getWeather()"> 
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div id="today-weather-info">
+                <h1 id="city-name"></h1>
+                <h3 id="temp-today"><span></span>°C</h3>
+                <div id="cloud-today"></div>
+                <p id="description-today"></p>
+                <p id="temp-range-today"><span class="min"></span>°C / <span class="max"></span>°C</p>
+            </div>
+        </div>
+
+        <div id="forecasts-container">
+            <section class="display-sec">
+                <div id="day1">
+                    <p class="day"></p>
+                    <p class="date date1"></p>
+                    <span class="cloudy cloud-1"></span>
+                    <h3 class="temp"><span></span>°C</h3>
+                    <p class="cloud"></p>
+                </div>
+
+                <div id="day2">
+                    <p class="day"></p>
+                    <p class="date date2"></p>
+                    <span class="cloudy cloud-2"></span>
+                    <h3 class="temp"><span></span>°C</h3>
+                    <p class="cloud"></p>
+                </div>
+
+                <div id="day3">
+                    <p class="day"></p>
+                    <p class="date date3"></p>
+                    <span class="cloudy cloud-3"></span>
+                    <h3 class="temp"><span></span>°C</h3>
+                    <p class="cloud"></p>
+                </div>
+
+                <div id="day4">
+                    <p class="day"></p>
+                    <p class="date date4"></p>
+                    <span class="cloudy cloud-4"></span>
+                    <h3 class="temp"><span></span>°C</h3>
+                    <p class="cloud"></p>
+                </div>
+
+                <div id="day5">
+                    <p class="day"></p>
+                    <p class="date date5"></p>
+                    <span class="cloudy cloud-5"></span>
+                    <h3 class="temp"><span></span>°C</h3>
+                    <p class="cloud"></p>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>

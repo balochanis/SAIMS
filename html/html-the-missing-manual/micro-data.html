@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Micro Data</title>
+    </head>
+    <body>
+        <h1>Microdata</h1>
+        <div itemprop="address" itemscope itemtype="http://data-recovery.org/Person">
+            <span itemprop="street-address">42 Jordan Gordon Street,
+                6th Floor</span><br>
+                <span itemprop="locality">San Francisco</span>,
+            <span itemprop="region">CA</span>
+        </div>
+
+        <hr>
+
+
+        <h1>About Me</h1>
+        <div itemscope itemtype="http://data-vocabulary.org/Person">
+            <img itemprop="photo" src="./assets/images/mike-face.png" alt="Mike's Face" >
+            <p>This website is the work of
+                <span itemprop="title" style="display: none;">Web Developer</span>
+                <b itemprop="name">Mike Rowe Formatte</b>
+                His friends know him as <b itemprop="nickname">The Big M</b>.</p>
+
+                <p>Or, visit him there at:<br>
+                    <span itemprop="addres" itemscope itemtype="http://data-vocabulary.org/Address">
+                    <span itemprop="street-address">42 Jordan Gordon Street,
+                        6th Floor</span><br>
+                        <span itemprop="locality">San Francisco</span>,
+                        <span itemprop="region">CA</span>
+                        <span itemprop="postal-code">94105</span><br>
+                        <span itemprop="country-name">USA</span><br>
+                    </span>
+                    <a itemprop="url" href="http://www/magicsemantics.com">www.magicsemantics.com</a>
+
+                </p>
+
+        </div>
+    </body>
+</html>

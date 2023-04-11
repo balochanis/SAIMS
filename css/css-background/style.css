@@ -1,0 +1,33 @@
+body
+{
+    background-color: powderblue;
+
+}
+#wrapper
+{
+    /* background: url("photo.jpeg") no-repeat turquoise; */
+    background-color: purple;
+    border: 15px dashed red;
+    background-origin:border-box;
+    padding: 100px;
+    background-blend-mode: overlay;
+    background-clip: content-box
+
+
+}
+
+img
+{
+    opacity: 0.1;
+}
+
+
+h1
+{
+    font-size: 60px;
+    font-family: Verdana;
+    color: white;
+    /* background-image: url('night.jpg'); */
+    background-clip: text;
+
+}

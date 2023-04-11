@@ -1,0 +1,40 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="data">
+
+    </div>
+</body>
+<script>
+    ///2.3.4 Function methods
+    //Difference between, calling a function 
+    // normally and with call function
+    alert("In case of Call function");
+
+    function Student(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    Student.prototype.isFeePaid = function (c1, c2) {
+        alert(this.name + " has already paid fee for " + c1);
+        alert(this.name + " has already paid fee for " + c2);
+    }
+
+    var st1 = new Student("Arsalan", 21);
+    var st2 = new Student("Haseeb", 23);
+
+    st1.isFeePaid("HTML", "CSS");
+
+    st1.isFeePaid.call(st1, "HTML", "CSS")
+
+    st1.isFeePaid.apply(st2, ["HTML", "CSS"])
+
+    alert("after object");
+    // st1.isFeePaid.call(st1,"HTML","CSS")
+</script>
+
+</html>

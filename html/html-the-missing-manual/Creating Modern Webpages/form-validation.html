@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Validation</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        fieldset
+        {
+            width: 400px;
+            margin: 0 auto;
+        }
+    ul
+    {
+        list-style: none;
+
+    }
+
+    ul li
+    {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    ul li em
+    {
+        color: red;
+    }
+
+    ul li label
+    {
+        width: 150px;
+        display: inline-block;
+    }
+
+    ul li span
+    {
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    ul li input[type=reset]
+    {
+        width: 150px;
+        background-color: aqua;
+    }
+
+    ul li input[type=submit]
+    {
+        width: 150px;
+        background-color: blueviolet;
+        /* margin-left: 20px; */
+    }
+
+    input:required
+    {
+        background-color: yellow;
+    }
+    input:required:invalid
+    {
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    
+    <form action="" >
+        <fieldset>
+            <legend>CONTACT DETAILS </legend>
+            <ul>
+                <li>
+                    <label for="name">Name<em>*</em></label>
+                    <span>
+                        <input type="text" name="name" id="name" required>        
+                    </span>
+                </li>
+                <li>
+                    <label for="tel">Telephone</label>        
+                    <span>
+                        <input type="tel" name="tel" id="tel">
+                    </span>
+                </li>
+                <li>
+                    <label for="email">Email<em>*</em></label>
+                    <span>
+                        <input type="email" name="email" id="email" required>        
+                    </span>
+                </li>
+
+                <li>
+                    <input type="reset" value="Clear">
+                    <span>
+                        <input type="submit" value="Add">
+                    </span>
+                </li>
+            </ul>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

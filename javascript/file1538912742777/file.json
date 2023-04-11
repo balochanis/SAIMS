@@ -1,0 +1,19 @@
+{
+    "users":[
+        {
+            "name":"",
+            "age":"",
+            "createdAt":""
+        },
+        {
+            "name":"",
+            "age":"",
+            "createdAt":""
+        },
+        {
+            "name":"",
+            "age":"",
+            "createdAt":""
+        }
+    ]
+}

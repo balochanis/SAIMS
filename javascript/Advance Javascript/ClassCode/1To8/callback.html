@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var a1 = "asasas";
+        var a2 = "asasas";
+        var a3 = 12;
+        var a4 = 6;
+        var sum = function(val1, val2, funcCB) {
+            var t = val1 + val2;
+            funcCB(t);
+        };
+        var afterSum = function(sumval) {
+            return sumVal + 100;
+        }
+        var totalSum;
+
+        setTimeout(() => {
+            sum(a3, a4, (total) => {
+                totalSum = total;
+                console.log(totalSum);
+            });
+        }, 2000);
+    </script>
+</body>
+
+</html>

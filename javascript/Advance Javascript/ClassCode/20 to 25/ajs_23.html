@@ -1,0 +1,31 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="data">
+
+    </div>
+</body>
+<script>
+    ///2.3.4 Function methods
+
+    function max(a, b, c) {
+        console.log("A = ", a);
+        console.log("B = ", b);
+        console.log("c = ", c);
+    }
+    console.log('calling 1 by params , sep.');
+    max(5, 7)
+
+    var vals = [6, 8, '4', 9];
+    console.log('calling 2 by params , sep.');
+    max(vals[0], vals[1]);
+
+    console.log('calling 3: max.apply params passing as an array');
+    max.apply(null, vals);
+</script>
+
+</html>

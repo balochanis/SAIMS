@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Display</title>
+    <style>
+        h1
+        {
+            position: fixed;
+            top: 0;
+            /* bottom: 20px; */
+
+        }
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+ 
+        #wrapper
+        {
+            background-color: gray;
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+        #top-header
+        {
+            background-color: green;
+            text-align: center;
+
+        }
+
+        #top-header h1
+        {
+            /* margin: 0; */
+            /* padding: 20px; */
+            color: white;
+            position: fixed;
+        }
+
+        nav
+        {
+            display: block;
+            padding-top: 0;
+        }
+
+        nav ul
+        {
+            text-align: center;
+            background-color: orange;
+
+        }
+
+        nav ul li
+        {
+            display: inline-block;
+            margin-right: 30px;
+            line-height: 26px;
+        }
+
+        nav ul li a
+        {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        nav ul li a:hover
+        {
+            text-decoration: underline;
+            text-decoration-color: blue;
+        }
+
+        #left-content
+        {
+            background-color: crimson;
+            width: 70%;
+            float: left;
+        }
+
+        #left-content article
+        {
+            background-color: lightblue;
+            width: 460px;
+            margin-bottom: 12px;
+        }
+
+        #left-content article .post-date
+        {
+            float: left;
+            margin-left: 26px;
+        }
+
+        #left-content article .post-author
+        {
+            float: right;
+            margin-right: 26px;
+        }
+
+        #left-content article span
+        {
+            font-weight: bold;
+        }
+
+        #left-content article>p
+        {
+            clear: both;
+            line-height: 20px;
+            padding: 10px;
+        }
+
+        #right-content
+        {
+            background-color: hotpink;
+            width: 25%;
+            float: right;
+        }
+
+        #right-content ul
+        {
+            margin-top: 40px;
+            list-style-type: none;
+        }
+
+        #right-content ul li
+        {
+            margin-bottom: 14px;
+        }
+
+        #right-content ul li a
+        {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer
+        {
+            background-color: greenyellow;
+            clear: both;
+        }
+
+        footer p
+        {
+            line-height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1>This is main heading</h1>
+    <div id="wrapper">
+        <header id="top-header">
+            <!-- <h1>This is a Main Heading</h1> -->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div id="main-content">
+            <div id="left-content">
+                <article>
+                    <header>
+                        <hgroup>
+                            <p class="post-date">Date: <span>23 May, 2020</span></p>
+                            <p class="post-author">Posted by: <span> Anis Baloch</span></p>
+                        </hgroup>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere totam recusandae voluptate! Quidem, reprehenderit at rem error expedita aliquid. Totam omnis quas eum facilis numquam accusantium ex repudiandae libero sed?</p>
+                    <footer> Category: <span>Public</span></footer>
+                </article>
+
+                <article>
+                    <header>
+                        <hgroup>
+                            <p>Date: <span>23 May, 2020</span></p>
+                            <p>Posted by: <span> Anis Baloch</span></p>
+                        </hgroup>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere totam recusandae voluptate! Quidem, reprehenderit at rem error expedita aliquid. Totam omnis quas eum facilis numquam accusantium ex repudiandae libero sed?</p>
+                    <footer> Category: <span>Public</span></footer>
+                </article>
+
+                <article>
+                    <header>
+                        <hgroup>
+                            <p>Date: <span>23 May, 2020</span></p>
+                            <p>Posted by: <span> Anis Baloch</span></p>
+                        </hgroup>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere totam recusandae voluptate! Quidem, reprehenderit at rem error expedita aliquid. Totam omnis quas eum facilis numquam accusantium ex repudiandae libero sed?</p>
+                    <footer> Category: <span>Public</span></footer>
+                </article>
+
+                <article>
+                    <header>
+                        <hgroup>
+                            <p>Date: <span>23 May, 2020</span></p>
+                            <p>Posted by: <span> Anis Baloch</span></p>
+                        </hgroup>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere totam recusandae voluptate! Quidem, reprehenderit at rem error expedita aliquid. Totam omnis quas eum facilis numquam accusantium ex repudiandae libero sed?</p>
+                    <footer> Category: <span>Public</span></footer>
+                </article>
+
+                <article>
+                    <header>
+                        <hgroup>
+                            <p>Date: <span>23 May, 2020</span></p>
+                            <p>Posted by: <span> Anis Baloch</span></p>
+                        </hgroup>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere totam recusandae voluptate! Quidem, reprehenderit at rem error expedita aliquid. Totam omnis quas eum facilis numquam accusantium ex repudiandae libero sed?</p>
+                    <footer> Category: <span>Public</span></footer>
+                </article>
+            </div>
+            <div id="right-content">
+                <ul id="side-menu">
+                    <li><a href="#">list-item-01</a></li>
+                    <li><a href="#">list-item-02</a></li>
+                    <li><a href="#">list-item-03</a></li>
+                    <li><a href="#">list-item-04</a></li>
+                </ul>
+            </div>
+        </div><!-- end main-content -->
+        <footer>
+            <p>&copy;Copyright By Anis Developer 2020</p>
+        </footer>
+    </div><!-- end wrapper -->
+    
+</body>
+</html>

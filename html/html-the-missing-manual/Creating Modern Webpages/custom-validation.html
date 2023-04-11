@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Validation</title>
+    <script>
+
+        function validateComments(input)
+        {
+        if (input.value.length < 20)
+            {
+                input.setCustomValidity("You need to write some more details");
+                
+            }
+
+            else
+            {
+                validateComments("");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Custom Validation</h1>
+    <form action="">
+        <label for="comments">When did you first know you wanted to be a zookeeper?</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" oninput="validateComments(this)"></textarea>
+        <input type="submit" value="Comments">
+    </form>
+</body>
+</html>

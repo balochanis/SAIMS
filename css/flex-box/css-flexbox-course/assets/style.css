@@ -1,0 +1,38 @@
+html,body
+{
+    background-color: cadetblue;
+    font-size: 2em;
+    height: 100%;
+}
+
+.container
+{
+    border: 10px solid yellow;
+
+}
+
+.container > div
+{
+    color: white;
+    text-align: center;
+}
+
+.home
+{
+    background: red;
+}
+
+.search
+{
+    background: blue;
+}
+
+.logout
+{
+    background: green;
+}
+
+.search
+{
+    background: skyblue;
+}

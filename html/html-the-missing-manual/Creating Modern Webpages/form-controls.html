@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM CONTROLS</title>
+    <style>
+    ul
+    {
+        list-style: none;
+        font-size: 16px;
+    }
+
+    ul li
+    {
+        margin-bottom: 10px;
+    }
+
+    ul li label
+    {
+        width: 180px;
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    ul li input
+    {
+        padding-left: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Form Controls</h1>
+    <form action="" method="POST">
+        <ul>
+            <li>
+                <label for="username">Username:</label>
+                <span>
+                    <input type="text" name="username" id="username" placeholder="User Name">
+                </span>
+            </li>
+            <li>
+                <label for="password">Password:</label>
+                <span><input type="password" placeholder="Password"></span>
+            </li>
+            <li>
+                <label for="telephone">Telephone:</label>
+                <span>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Phone Number">
+                </span>
+            </li>
+            <li>
+                <label for="email">Email Address:</label>
+                <span>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                </span>
+            </li>
+            <li>
+                <label for="profile-pic">Upload Profile Picture</label>
+                <span>
+                    <input type="file" name="profile-pic" id="profile-pic">
+                </span>
+            </li>
+            <li>
+                <label for="gender">Gender:</label>
+                <span>
+                    <input type="radio" name="gender" id="male" checked><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+
+                </span>
+            </li>
+            <li>
+                <label for="agreement">Agree</label>
+                <input type="checkbox" name="agreement" id="agreement" checked>
+                <label for="agreement">I Accept rules and regulations:</label>
+            </li>
+
+            <li>
+                <input type="reset" value="Clear">
+                <input type="submit" value="Accept">
+            </li>
+
+            <li>
+                <label for="fav-color">Favourite Color:</label>
+                <span>
+                    <input type="color" name="fav-color" id="fav-color" />
+                </span>
+            </li>
+
+            <li>
+                <label for="birth-date">Date of Birth:</label>
+                <span>
+                    <select name="birth-date" id="birth-day">
+                        <option value="0">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29" selected>29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+                    <select name="birth-date" id="birth-month">
+                        <option value="0">Month</option>
+                        <option value="jan">January</option>
+                        <option value="feb">February</option>
+                        <option value="mar">March</option>
+                        <option value="apr">April</option>
+                        <option value="may">May</option>
+                        <option value="12" selected>December</option>
+                    </select>
+
+                    <select name="birth-date" id="birth-year">
+                        <option value="0" hidden>Year</option>
+                        <option value="1992" selected>1992</option>
+                    </select>
+                </span>
+            </li>
+
+            <li>
+                <label for="weight">Weight (in kgs)</label>
+                <span>
+                    <input type="number" name="weight" id="weight" min="0" max="50" step="0.1" />
+                </span>
+            </li>
+
+            <li>
+                <label for="qty">Quantity:</label>
+                <input type="range" name="qty" id="qty" />
+
+            </li>
+
+      
+        </ul>
+    </form>
+
+</html>

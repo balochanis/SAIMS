@@ -1,0 +1,41 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="data">
+
+    </div>
+</body>
+<script>
+    ///2.3.2 Higher-order functions
+    //A function is returned from another function.
+
+    function hello() {
+        var b = 6;
+        return b;
+    }
+
+    var a = hello();
+    alert(a);
+
+    function xyz() {
+        var abc = function() {
+            return 8;
+        }
+        return abc;
+    }
+
+    var c = xyz();
+    alert('c ' + c); // func def.             //
+
+    var d = c();
+    alert('d ' + d); // 8        //
+
+    var e = xyz()();
+    alert('e ' + e); // 8    //error
+</script>
+
+</html>

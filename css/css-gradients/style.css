@@ -1,0 +1,40 @@
+
+div
+{
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    width: 500px;
+    height: 80px;
+    margin: 20px auto;
+
+}
+
+#box1
+{
+    background: linear-gradient(45deg, green, red, blue);
+
+}
+
+
+#box2
+{
+    background: linear-gradient(to top, aqua, darkcyan);
+}
+
+
+#box3
+{
+    background: repeating-radial-gradient(purple, black, red, yellow);
+}
+
+
+#box4
+{
+    background: linear-gradient(to right,red, blue, violet);
+    color: white;
+    font-weight: bold;
+
+}
+
+

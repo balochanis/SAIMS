@@ -1,0 +1,26 @@
+
+body
+{
+    background-color: green;
+}
+
+.box
+{
+    color: white;
+    width: 500px;
+    height: 500px;
+    background: crimson url("photo.jpeg") no-repeat center center;
+    background-blend-mode: unset;
+}
+
+.box:hover
+{
+    background-blend-mode: screen;
+}
+
+.image
+{
+    
+    /* background-color: crimson; */
+    background-blend-mode: color-burn;
+}

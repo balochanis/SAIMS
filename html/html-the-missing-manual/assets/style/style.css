@@ -1,0 +1,94 @@
+#wrapper
+{
+    font-size: 16px;
+    width: 1000px;
+    margin: 0 auto;
+ 
+}
+
+#the-header
+{
+    background-color: silver;
+    height: 70px;
+
+}
+
+#the-header nav
+{
+    height: 32px;
+    line-height: 32px;
+}
+
+#the-header nav ul
+{
+    list-style-type: none;
+
+    
+}
+
+#the-header nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: arial;
+    font-size: 16px;
+}
+
+#the-header nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#the-header nav ul li a:hover
+{
+    color: black;
+}
+
+
+#main-content
+{
+    background-color: green;
+    margin-top: 10px;
+}
+
+article
+{
+    width: 680px;
+    background-color: lightskyblue;
+    border: 2px solid black;
+    padding:10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+article h3
+{
+    font-size: 18px;
+    font-family: tahoma;
+    margin: 0;
+
+}
+
+article p
+{
+    font-family: arial;
+}
+article time
+{
+    color: red;
+}
+
+article img
+{
+    width: 200px;
+    height: 200px;
+}
+
+article figure
+{
+    margin-left: 0;
+}
+
+
+

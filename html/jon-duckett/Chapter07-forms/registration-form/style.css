@@ -1,0 +1,93 @@
+*
+{
+    font-family: sans-serif;
+    color: black;
+    
+}
+
+#wrapper
+{
+    /* background-color: powderblue; */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header
+{
+    background-color: green;
+    border-radius: 10px;
+
+}
+
+header h1
+{
+    color: white;
+    padding: 20px;
+
+}
+
+
+
+form ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+form ul li
+{
+    margin-bottom: 10px;
+    /* float: left; */
+}
+
+form ul li label
+{
+    width: 200px;
+    height: 26px;
+    display: inline-block;
+
+}
+
+.magazine
+{
+    line-height: 82.75px;
+}
+
+form ul li span input, form ul li span select
+{
+    height: 26px;
+    width: 200px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+form ul li span select[multiple]
+{
+    height: auto;
+    
+}
+
+
+form ul li span select
+{
+    width: 209px;
+}
+
+form ul li textarea
+{
+    width: 400px;
+}
+
+form ul li input[type=submit]
+{
+    background-color: green;
+    height: 26px;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}

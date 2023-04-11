@@ -1,0 +1,61 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="data">
+
+    </div>
+</body>
+<script>
+    ///2.3.2 Higher-order functions
+    //A function is returned from another function.
+
+
+    function multiplier(a, b) {
+        return a * b;
+    }
+
+    function multiplyByTwo(a) {
+        return 2 * a;
+    }
+
+    function multiplyByThree(a) {
+        return 3 * a;
+    }
+
+    function multiplyByVal(a) {
+        var resultFunction = function(b) {
+            return multiplier(a, b);
+        }
+        return resultFunction;
+    }
+
+    var multiply = multiplyByVal(8);
+    // alert(multiply);
+    // alert(multiply(3));
+    // alert(multiply(5));
+    // alert(multiply(6));
+
+    var multiply1 = multiplyByVal(12);
+    // alert(multiply1(3));
+    // alert(multiply1(5));
+    // alert(multiply1(6));
+
+    console.log(multiplyByVal(3)(1))
+    console.log(multiplyByVal(3)(2))
+    console.log(multiplyByVal(3)(3))
+
+
+    /*
+        function multiplyByVal(a){
+            return function (b){
+                return multiplier(a,b);
+            }
+        }
+    */
+</script>
+
+</html>

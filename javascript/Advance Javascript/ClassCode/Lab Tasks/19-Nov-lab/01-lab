@@ -1,0 +1,45 @@
+// Lab Task / Assignment:
+// ---------
+function a1(cb) {
+setTimeout(()=>{
+console.log('a1'); 
+cb();
+}, 1000);
+}
+function a2(cb) {
+setTimeout(()=>{
+console.log('a2'); 
+cb();
+}, 500);
+}
+function a3(cb) {
+setTimeout(()=>{
+console.log('a3'); 
+cb();
+}, 800);
+}
+
+var arr = [a1, a2, a3];
+
+// Result Should be:
+// ----------------
+a1
+a2
+a3
+
+// Solution:
+// ---------
+var index = 0;
+function d() {
+// recursive function
+if(index < arr.length){
+arr[index](function() {
+index++;
+d(); 
+})
+
+}
+}
+
+// function calling
+d()

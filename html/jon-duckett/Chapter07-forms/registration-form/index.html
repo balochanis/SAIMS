@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Registration Form</h1>
+        </header>
+        <div id="main-content">
+          <form action="" method="POST">
+            <ul>
+                <li>
+                    <label for="username">User Name:</label>
+                    <span>
+                        <input type="text" name="username" id="username" placeholder="User Name" autocomplete="off"/>
+                    </span>
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <span>
+                        <input type="password" name="password" id="password" placeholder="Password" />
+                    </span>
+                </li>
+                <li>
+                    <label for="dateofbirth">Date of Birth:</label>
+                    <span>
+                        <input type="date" name="dateofbirth" id="dateofbirth" />
+                    </span>
+                </li>
+                <li>
+                    <label for="weburl">Web URL:</label>
+                    <span>
+                        <input type="url" name="weburl" id="weburl" placeholder="Web URL"/>
+                    </span>
+                </li>
+                <li>
+                    <label for="address">Address:</label>
+                    <span>
+                        <input type="text" name="address" id="address" placeholder="Address"/>
+                    </span>
+                </li>
+                <li>
+                    <label for="city">City:</label>
+                    <span>
+                        <select name="city" id="city">
+                            <option value="karachi">Karachi</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="multan">multan</option>
+                            <option value="lahore">Lahore</option>
+                        </select>
+                    </span>
+                </li>
+                <li>
+                    <label for="state">State:</label>
+                    <span>
+                        <input type="text" name="state" id="state" placeholder="State" />
+                    </span>
+                </li>
+                <li>
+                    <label for="zipcode">Zip:</label>
+                    <span>
+                        <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code"/>
+                    </span>
+                </li>
+                <li>
+                    <label for="magazine" class="magazine">Magazine:</label>
+                    <span>
+                        <select name="magazine" id="magazine" multiple="multiple">
+                            <option value="newsweek">Newsweek</option>
+                            <option value="time">Time</option>
+                            <option value="fortune">Fortune</option>
+                            <option value="tvguide">TV Guide</option>
+                        </select>
+                    </span>
+                </li>
+                <li>
+                    <label for="comments">Additional Comments:</label>
+                </li>
+                <li>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <label for="profile">
+                        Upload your profile picture:
+                    </label>
+                    <span>
+                        <input type="file" name="profile" id="profile" />
+                    </span>
+                </li>
+
+                <li>
+                    <input type="submit" value="Send Your Order" />
+                </li>
+
+            </ul>
+          </form>
+        </div><!-- end main-content -->
+    </div><!-- end wrapper -->
+</body>
+</html>

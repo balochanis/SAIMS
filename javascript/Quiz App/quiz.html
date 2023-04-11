@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>Html, CSS & Javascript Quiz .</h1>
+        <!-- <hr> -->
+        <div class="timer">
+            <h2>Timer: &nbsp;</h2>
+            <h2 id="min"> 05</h2>
+            <h2> : </h2>
+            <h2 id="sec">00</h2>
+        </div>
+        <h3 id="question"></h3>
+        <hr>
+        <div class="input">
+            <label class="inp">
+                <input onclick="enable()" type="radio" name="option" value="1">
+                <span id="one"></span>
+            </label>
+            <br>
+            <label class="inp">
+                <input onclick="enable()" type="radio" name="option" value="2">
+                <span id="two"></span>
+            </label>
+            <br>
+            <label class="inp">
+                <input onclick="enable()" type="radio" name="option" value="3">
+                <span id="three"></span>
+            </label>
+            <br>
+            <br>
+        </div>
+        <hr>
+        <button disabled id="btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

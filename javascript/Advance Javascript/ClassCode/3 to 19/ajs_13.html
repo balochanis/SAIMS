@@ -1,0 +1,37 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="data">
+
+    </div>
+</body>
+<script>
+    //2.3.1 Functions as first-class citizens
+    function hello(a) {
+        return a * 2;
+    }
+
+    var result1 = function(b, c, u) {
+        return b * 2;
+    }
+
+    var result2 = c => c * 2;
+    var result3 = (c) => {
+        return c * 2
+    };
+
+    var abc = hello(5);
+    var xyz = result1(5);
+    var xyz2 = result2(5);
+    console.log(abc);
+    console.log(xyz);
+    console.log('r1 length ', result1.length);
+    console.log('r2 length ', result2.length);
+    console.log('hello length ', hello.length);
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+  };
+  firebase.initializeApp(config);
+    const db = firebase.database()
+
+  function submit(){
+    var myName = document.getElementById('name').value;
+    var age = document.getElementById('age').value;
+    // const id = parseInt(Math.random() * 1000);
+    // console.log(id);
+    // db.ref('users/' + id).set({ name : myName, age: age});
+    db.ref('users').push({ name : myName, age: age});
+  }
+
+  db.ref('users').on('value', function(snapshot){
+      const allData = snapshot.val();
+      console.log(allData);
+  })
+
+</script>
+</head>
+<body>
+    <input type='text' id='name' name='name'/>
+    <input type='text' id='age' name='age'/>
+    <button onclick="submit()">Send Data</button>
+
+</body>
+</html>
